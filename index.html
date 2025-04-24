@@ -3,23 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operaciones con Array</title>
+    <title>Document</title>
 </head>
 <body>
 
     <div id="resultado"></div>
     <script>
-        function sumar()
+        function sumar(valor1,valor2)
         {
-            valor1 = parseInt(prompt("Vamos a sumar 2 números. Ingrese el número uno: "));
-            valor2 = parseInt(prompt("Ingrese número dos: "));
-
             var resultado=valor1+valor2;
-            document. getElementById("resultado").innerHTML="La función obtiene la siguiente suma: "+resultado;
+            return resultado;
         }
-
-        sumar();
+        document.getElementById("resultado").innerHTML="Resultado de la suma es:"+sumar(30,50);
     </script>
-
 </body>
 </html>
